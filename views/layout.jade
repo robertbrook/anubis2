@@ -2,6 +2,84 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='css/bootstrap.min.css', rel='stylesheet')
+    style.
+      body {
+      padding-top: 50px;
+      }
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
   body
-    block content
+    .navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') Energy Bill
+        .collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          block content
+          h1 Energy Bill
+          p.lead
+            | [To] Make provision for the setting of a decarbonisation target range and duties in relation to it; for or in connection with reforming the electricity market for purposes of encouraging low carbon electricity generation or ensuring security of supply ...
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+          .panel.panel-default
+            .panel-body
+              | Panel content
+            .panel-footer Associated Parliamentary material
+          .panel.panel-primary
+            .panel-heading
+              h3.panel-title Business Papers
+            .panel-body
+              | Panel content
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+          .panel.panel-default
+            .panel-body
+              | Panel content
+            .panel-footer Associated Parliamentary material
+          .panel.panel-primary
+            .panel-heading
+              h3.panel-title Business Papers
+            .panel-body
+              | Panel content
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+          .panel.panel-default
+            .panel-body
+              | Panel content
+            .panel-footer Associated Parliamentary material
+          .panel.panel-primary
+            .panel-heading
+              h3.panel-title Business Papers
+            .panel-body
+              | Panel content
+          .panel.panel-default
+            .panel-body
+              | Basic panel example
+    script(src='https://code.jquery.com/jquery.js')
+    script(src='js/bootstrap.min.js')

@@ -8,7 +8,8 @@
   "dependencies": {
     "express": "3.4.4",
     "jade": "*",
-    "request": "*",
-    "supertest": "*"
+    "expect.js": "*",
+    "superagent": "*",
+    "should": "*"
   }
 }

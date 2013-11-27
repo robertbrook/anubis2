@@ -1,12 +1,17 @@
+mixin pets(pets)
+  ul.pets
+    - each pet in pets
+      li= pet
+      
 extends layout
-
+  
 block content
   h1= title
   p.lead
     | [To] Make provision for the setting of a decarbonisation target range and duties in relation to it; for or in connection with reforming the electricity market for purposes of encouraging low carbon electricity generation or ensuring security of supply ...
-  .panel.panel-default
-    .panel-body
-      | Basic panel example
+  .panel.panel-default: .panel-body
+      | MMMMMMMMMM Basic panel example
+      +pets(['cat', 'dog', 'pig'])
   .panel.panel-default
     .panel-body
       | Panel content
